@@ -1,0 +1,13 @@
+body {
+  background-color: #ccc;
+}
+
+h1 {
+  font-family: 'Rubik', monospace;
+  color: #e34e45;
+}
+
+form {
+  border: 1px solid black;
+  max-width: 350px;
+}
