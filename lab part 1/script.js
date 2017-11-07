@@ -19,6 +19,6 @@ $(document).ready(function() {
   $("#save").click(function() {
     $("form").css("display", "none");
     $("div").filter("[class2=true]").attr("class2", "false");
-    $("div").filter("[class2=false]").css("cursor", "not-allowed");
+    $("div").filter("[class2=false]").addClass("is-disabled");
   });
 });

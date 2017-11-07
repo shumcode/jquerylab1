@@ -44,10 +44,10 @@ form p {
 
 form {
   z-index: 9999;
-  position: absolute;
-  top: 150px;
-  right: 37.5%;
-  width: 400px;
+  position: relative;
+  top: -330px;
+  margin:  auto;
+  max-width: 400px;
   box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
   background-color: white;
   height: 400px;
@@ -86,20 +86,22 @@ input {
 .available {
   background-color: #eee;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px; 
+  margin: 15px;
+  font-family: 'Roboto Mono', monospace; 
 }
 
 .reserved {
+  cursor: not-allowed;
   background-color: #ADAAAA;
   color: white;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,8 +134,19 @@ input {
   align-items: center;
 }
 
+.is-disabled {
+  pointer-events: none;
+}
+
 .headercontainer {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 335px) {
+  .available, .reserved {
+    width: 75px;
+    height: 75px;
+  }
 }
