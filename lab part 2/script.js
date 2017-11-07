@@ -15,7 +15,7 @@ $(document).ready(function() {
     if ($(this).hasClass("reserved")) {
       $(this).css("cursor", "not-allowed");
       $(this).off("click");
-      $(this).after("<div class='hover'><p>Guest Name: " + name + "</p>" + "<p>Number of Guests: " + guestNum + "</p></div>");
+      $(this).after("<div class='hover'><p>Guest Name: " + name + "</p>" + "<p>Guests: " + guestNum + "</p></div>");
     }
     $(this).fadeTo(150, 0.5);
   }).on("mouseleave", function(event) {
