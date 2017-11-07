@@ -1,15 +1,135 @@
 body {
   background-color: #ccc;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
   font-family: 'Rubik', monospace;
   color: #e34e45;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.reservetext {
+  color: #e34e45;
+  margin-left: 20px;
+  font-family: 'Rubik', monospace;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+form p {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.material-icons {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  color: #ccc;
+}
+
+.wrapper {
+  position: relative;
 }
 
 form {
-  border: 1px solid black;
-  max-width: 350px;
+  z-index: 9999;
+  position: absolute;
+  top: 150px;
+  right: 37.5%;
+  width: 400px;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+  background-color: white;
+  height: 400px;
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+#save {
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+  background-color: #008000;
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+#guests {
+  margin-bottom: 25px;
+}
+
+.available {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px; 
+}
+
+.reserved {
+  background-color: #ADAAAA;
+  color: white;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px; 
+}
+
+#top {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#middle {
+  margin-bottom: 10px;
+}
+
+#bottom {
+  margin-bottom: 30px;
+}
+
+.circleholder {
+  z-index: 1;
+  margin: auto;
+  border-radius: 10px;
+  background-color: white;
+  max-width: 375px;
+  max-height: 375px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .headercontainer {

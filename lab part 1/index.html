@@ -17,27 +17,26 @@
   </div>
   
   <div class="circleholder">
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
-    <div class="available"></div>
+    <div class="available" id="top">1</div> 
+    <div class="available" id="top">2</div>
+    <div class="available" id="top">3</div>
+    <div class="available" id="middle">4</div>
+    <div class="available" id="middle">5</div>
+    <div class="available" id="middle">6</div>
+    <div class="available" id="bottom">7</div>
+    <div class="available" id="bottom">8</div>
+    <div class="available" id="bottom">9</div>
   </div>
 
   <form action="submit">
     <i class="material-icons">&#xE5CD;</i>
-    <h3>New Reservation</h3>
-    <p>Table Number: </p>
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <button type="submit">Save</button>
+    <p class="reservetext">New Reservation</p>
+    <p class="tablenumber">Table Number: </p>
+    <input type="text" placeholder="Name" id="name">
+    <input type="text" placeholder="Phone Number">
+    <input type="text" placeholder="Party Size" id="guests">
+    <button type="button" id="save">SAVE</button>
   </form>
-
 
 
   <script src="jquery-3.2.1.min.js"></script>
